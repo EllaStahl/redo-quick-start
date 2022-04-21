@@ -1,0 +1,40 @@
+---
+description: A QuickStart component to use for creating QuickStarts .
+---
+
+import { QuickStart } from './quick-start';
+
+This is a a quickStart template that can be used to create a new quickStart for the bit.dev website. Here are a few examples of QuickStarts built using this component:
+
+1. [Wiki-Quick_start](https://bit.dev/docs/quick-start)
+2. [Design-System-Quick_start](https://bit.dev/docs/quick-start/design)
+3. [Analytics-Quick-Start](https://bit.dev/docs/quick-start/analytics)
+
+In order to create your own quick start, first you need to create and export the example component - the mainComponent that you will be teaching how to bulid in this tutorial.
+Once you have the mainComponent we can get started with creating the quickstart!
+
+You will need to:
+
+1. Add the 'components' - the list of components that compose the mainComponent (pick 3 to 6 components that are the important ones).
+2. Add custom text : an 'intro', 'ending' (after the component showcase), and 'before-thinking' (before the component breakdown).
+3. Add explanations befor each of the components - what is their responsibility and functionality.
+
+### Using the component:
+
+```js
+// Add all of your text as a string, an element or import it from an mdx file.
+
+<QuickStart
+  intro={'Add your introduction here'}
+  ending={'Add your text after the component showcase'}
+  beforeThinking={'Add text after the component cards'}
+  name="Name-of-your-quickStart"
+  // id and main Component - The component you are teaching people to build. This will appear in the component showcase
+  // at the top of the quick start, and this is usually also the first component in the
+  // component-thinking-process (The breakdown of the components in the tutorial):
+  id={id}
+  mainComponent={<SampleApp />}
+  // The components in the component breakdown at the end of the tutorial:
+  components={components}
+/>
+```
