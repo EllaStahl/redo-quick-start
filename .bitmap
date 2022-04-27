@@ -9,6 +9,19 @@
  */
 
 {
+    "content/quick-start": {
+        "scope": "teambit.docs",
+        "version": "1.95.36",
+        "mainFile": "index.ts",
+        "rootDir": "docs/content/quick-start"
+    },
+    "envs/community-mdx": {
+        "scope": "teambit.community",
+        "version": "1.95.15",
+        "mainFile": "index.ts",
+        "rootDir": "community/envs/community-mdx",
+        "onLanesOnly": true
+    },
     "quick-start": {
         "scope": "teambit.bit",
         "version": "0.0.36",

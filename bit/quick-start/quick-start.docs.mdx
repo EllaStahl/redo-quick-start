@@ -4,25 +4,64 @@ description: A QuickStart component to use for creating QuickStarts .
 
 import { QuickStart } from './quick-start';
 
-This is a a quickStart template that can be used to create a new quickStart for the bit.dev website. Here are a few examples of QuickStarts built using this component:
+This is a quickStart template that can be used to create a new quickStart for the bit.dev website. Here are a few examples of quickStarts built using this component:
 
-1. [Wiki-Quick_start](https://bit.dev/docs/quick-start)
-2. [Design-System-Quick_start](https://bit.dev/docs/quick-start/design)
+1. [Wiki-Quick-Start](https://bit.dev/docs/quick-start)
+2. [Design-System-Quick-Start](https://bit.dev/docs/quick-start/design)
 3. [Analytics-Quick-Start](https://bit.dev/docs/quick-start/analytics)
 
-In order to create your own quick start, first you need to create and export the example component - the mainComponent that you will be teaching how to bulid in this tutorial.
-Once you have the mainComponent we can get started with creating the quickstart!
+#### What is a quickStart
 
-You will need to:
+A quickStart is a simple tutorial, explaining to new Bit users how to install Bit, create their first workspace, collaborate with Bit and build a specific component.
+The quickStart component already has the installation guide etc., and you need to add the explanation of how to **build a specific component**.
+We call this the _'mainComponent'_, and this example component is meant to explain a specific subject in Bit.
 
-1. Add the 'components' - the list of components that compose the mainComponent (pick 3 to 6 components that are the important ones).
-2. Add custom text : an 'intro', 'ending' (after the component showcase), and 'before-thinking' (before the component breakdown).
-3. Add explanations befor each of the components - what is their responsibility and functionality.
+In order to create your own quick start, first you need to create and export the example component - the _'mainComponent'_ that you will be teaching the readers how to bulid in this tutorial.
+Keep it simple and try to demonstrate one thing Bit can do, to avoid overcomplication and long tutorials.
+Once you have the _'mainComponent'_ we can get started with creating the quickStart!
 
-### Using the component:
+#### Building your quickSart
+
+1. Add (optional) custom text - you can add all or some of these, keep it short, and explain why building this specific _'mainComponent'_ with Bit is a good idea:
+
+- _'intro'_- there is a default intro if you don't add this text yourself.
+- _'ending'_ - after the component showcase
+- _'before-thinking'_ - before the component breakdown
+
+2. Add the _'components'_ - the list of components that compose the _'mainComponent'_ (we recommend to have 3 to 6 components that are the important ones, so it doesn't get too crowded).
+
+3. Add explanations before each of the components - what is their responsibility and functionality.
+   This part gets added inside the _'components'_ array:
+
+```js
+const components = [
+  {
+    id: 'teambit.design/examples/sample-app',
+    intro: <div>Add text about this component here</div>,
+  },
+  {
+    id: 'teambit.design/ui/heading',
+    intro: <div>Add text about this component here</div>,
+  },
+];
+```
+
+### Using the quickStart component:
 
 ```js
 // Add all of your text as a string, an element or import it from an mdx file.
+const components = [
+  {
+    id: 'teambit.design/examples/sample-app',
+    intro: <div>Add intro text here</div>,
+  },
+  {
+    id: 'teambit.design/ui/heading',
+    intro: <div>Add intro text here</div>,
+  },
+];
+
+const id = ComponentID.fromString('teambit.design/examples/sample-app');
 
 <QuickStart
   intro={'Add your introduction here'}
@@ -36,5 +75,5 @@ You will need to:
   mainComponent={<SampleApp />}
   // The components in the component breakdown at the end of the tutorial:
   components={components}
-/>
+/>;
 ```

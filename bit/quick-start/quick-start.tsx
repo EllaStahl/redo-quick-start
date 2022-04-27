@@ -30,6 +30,11 @@ export type QuickStartComponent = {
   intro?: ReactNode;
 
   /**
+   * text to use in the ending of the component walk through.
+   */
+  ending?: ReactNode;
+
+  /**
    * text to be shown before fork.
    */
   fork?: ReactNode;
@@ -118,6 +123,7 @@ export function QuickStart({
   return (
     <div>
       <div className={styles.sectionMargin}>{intro || <DefaultIntro />}</div>
+      {/* The main component will be shown inside the component showcase */}
       <ComponentShowcase
         className={wideColumn}
         componentId={id.toString()}
@@ -125,8 +131,6 @@ export function QuickStart({
       />
       <div className={styles.showcase}>
         {ending}
-        {/*<WhatIsBit /> */}
-        {/* <H3>Learn Bit</H3> */}
         <LearnCrossroad
           className={centerColumn}
           title="Thinking in components"
@@ -142,7 +146,6 @@ export function QuickStart({
       />
       <Components />
       <ComponentCardDisplay componentIds={ids} />
-      {/* <H3>Building the components</H3> */}
       {beforeThinking}
       <ThinkingProcess components={targetComponents} />
       {children}

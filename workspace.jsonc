@@ -27,7 +27,7 @@
     /**
      * default scope for all components in workspace.
      **/
-    "defaultScope": "my-org.my-scope"
+    "defaultScope": "teambit.bit"
   },
   /**
    * main configuration for component dependency resolution.
@@ -47,13 +47,14 @@
         "eslint-plugin-jest": "24.4.0",
         "eslint-plugin-jsx-a11y": "6.4.1",
         "eslint-plugin-mdx": "1.15.0",
-        "eslint-plugin-react": "7.25.1"
+        "eslint-plugin-react": "7.25.1",
+        "react-router-dom": "6.3.0"
       },
       "peerDependencies": {
         "@apollo/client": "3.5.10",
-        "@testing-library/react": "12.0.0",
+        "@testing-library/react": "^12.1.5",
         "graphql": "16.3.0",
-        "react": "17.0.2",
+        "react": "^17.0.2",
         "react-dom": "17.0.2",
         "subscriptions-transport-ws": "0.11.0"
       }
