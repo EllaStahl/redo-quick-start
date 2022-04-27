@@ -7,6 +7,7 @@ importers:
       '@apollo/client': 3.5.10
       '@babel/runtime': 7.12.18
       '@loadable/component': 5.15.0
+      '@mdx-js/react': 1.6.22
       '@teambit/analytics.community.analytics-quick-start': 0.0.23
       '@teambit/base-react.navigation.link': 2.0.27
       '@teambit/base-ui.layout.page-frame': 1.0.2
@@ -33,15 +34,16 @@ importers:
       '@teambit/explorer.ui.gallery.component-card-group': 1.95.6
       '@teambit/harmony': 0.3.3
       '@teambit/mdx.ui.mdx-layout': 0.0.498
+      '@teambit/mdx.ui.mdx-scope-context': 0.0.368
       '@teambit/react.ui.component-highlighter': 0.1.0
       '@teambit/ui-foundation.ui.navigation.react-router-adapter': 6.1.1
       '@teambit/ui-foundation.ui.tree.drawer': 0.0.476
       '@teambit/wiki.apps.wiki': 1.90.14
       '@testing-library/react': ^12.1.5
-      '@types/jest': 26.0.20
+      '@types/jest': '>=26.0.0 <27.0.0'
       '@types/node': 12.20.4
-      '@types/react': ^17.0.8
-      '@types/react-dom': ^17.0.5
+      '@types/react': '>=17.0.8 <18.0.0'
+      '@types/react-dom': '>=17.0.5 <18.0.0'
       '@types/testing-library__jest-dom': 5.9.5
       '@typescript-eslint/eslint-plugin': 4.29.3
       core-js: ^3.0.0
@@ -61,6 +63,7 @@ importers:
       '@apollo/client': registry.npmjs.org/@apollo/client/3.5.10_187d535f52fb05b914216ac95807f488
       '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
       '@loadable/component': registry.npmjs.org/@loadable/component/5.15.0_react@17.0.2
+      '@mdx-js/react': registry.npmjs.org/@mdx-js/react/1.6.22_react@17.0.2
       '@teambit/analytics.community.analytics-quick-start': 0.0.23_4d20c47d831b54a5b4e92587014a31a7
       '@teambit/base-react.navigation.link': 2.0.27_72da2f06e0ce6affd37e9dbdf65b3945
       '@teambit/base-ui.layout.page-frame': registry.npmjs.org/@teambit/base-ui.layout.page-frame/1.0.2_react-dom@17.0.2+react@17.0.2
@@ -86,6 +89,7 @@ importers:
       '@teambit/explorer.ui.gallery.component-card-group': 1.95.6_150be2d4515131e54e0531e15473f3a8
       '@teambit/harmony': registry.npmjs.org/@teambit/harmony/0.3.3
       '@teambit/mdx.ui.mdx-layout': registry.npmjs.org/@teambit/mdx.ui.mdx-layout/0.0.498_b49bddbe4b905ced4713cb857cca91fa
+      '@teambit/mdx.ui.mdx-scope-context': registry.npmjs.org/@teambit/mdx.ui.mdx-scope-context/0.0.368_react-dom@17.0.2+react@17.0.2
       '@teambit/react.ui.component-highlighter': registry.npmjs.org/@teambit/react.ui.component-highlighter/0.1.0_10a7c058dfa2b67928af5aacd5ab425c
       '@teambit/ui-foundation.ui.navigation.react-router-adapter': 6.1.1_5d1ebe6572ffe4e92fc66db4af941ed9
       '@teambit/ui-foundation.ui.tree.drawer': registry.npmjs.org/@teambit/ui-foundation.ui.tree.drawer/0.0.476_react-dom@17.0.2+react@17.0.2
@@ -107,7 +111,7 @@ importers:
       subscriptions-transport-ws: registry.npmjs.org/subscriptions-transport-ws/0.11.0_graphql@16.3.0
     devDependencies:
       '@teambit/design.examples.sample-app': 0.0.8_72da2f06e0ce6affd37e9dbdf65b3945
-      '@types/jest': registry.npmjs.org/@types/jest/26.0.20
+      '@types/jest': registry.npmjs.org/@types/jest/26.0.24
       '@types/node': registry.npmjs.org/@types/node/12.20.4
       '@types/react': registry.npmjs.org/@types/react/17.0.44
       '@types/react-dom': registry.npmjs.org/@types/react-dom/17.0.15
@@ -6029,15 +6033,6 @@ packages:
     version: 3.0.1
     dependencies:
       '@types/istanbul-lib-report': registry.npmjs.org/@types/istanbul-lib-report/3.0.0
-    dev: true
-
-  registry.npmjs.org/@types/jest/26.0.20:
-    resolution: {integrity: sha512-9zi2Y+5USJRxd0FsahERhBwlcvFh6D2GLQnY2FH2BzK8J9s9omvNHIbvABwIluXa0fD8XVKMLTO0aOEuUfACAA==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@types/jest/-/jest-26.0.20.tgz}
-    name: '@types/jest'
-    version: 26.0.20
-    dependencies:
-      jest-diff: registry.npmjs.org/jest-diff/26.6.2
-      pretty-format: registry.npmjs.org/pretty-format/26.6.2
     dev: true
 
   registry.npmjs.org/@types/jest/26.0.24:

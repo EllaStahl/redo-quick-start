@@ -22,6 +22,18 @@ or [self-host your scope](/scope/running-a-scope-server).
 
 <CreateAccount className={centerColumn} />
 
+Once you've created a new remote scope, to update it to be your default scope, use:
+
+```
+bit scope rename
+```
+
+And if you want the existing components in your workspace to be updated to the new scope name, add the 'refactor' flag like this:
+
+```
+bit scope rename --refactor
+```
+
 ### Snap your changes
 
 To record your component changes you can use:
