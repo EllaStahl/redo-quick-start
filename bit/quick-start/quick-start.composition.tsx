@@ -66,7 +66,7 @@ export const BasicQuickStart = () => {
       intro={intro}
       ending={<Ending />}
       beforeThinking={beforeThinkingText}
-      name="Name-of-your-quickStart"
+      name="name-of-your-quick-start"
       // id and main Component - The component you are teaching people to build. This will appear in the component showcase
       // at the top of the quick start, and this is usually also the first component in the
       // component-thinking-process (The breakdown of the components in the tutorial)

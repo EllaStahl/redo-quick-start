@@ -13,7 +13,13 @@
         "scope": "teambit.docs",
         "version": "1.95.36",
         "mainFile": "index.ts",
-        "rootDir": "docs/content/quick-start"
+        "rootDir": "docs/content/quick-start",
+        "lanes": [
+            {
+                "remoteLane": "teambit.bit/redo-quickstart",
+                "version": "12bed43bab9deed95d8a63cdec3c006f78355415"
+            }
+        ]
     },
     "envs/community-mdx": {
         "scope": "teambit.community",
@@ -26,7 +32,17 @@
         "scope": "teambit.bit",
         "version": "0.0.36",
         "mainFile": "index.ts",
-        "rootDir": "bit/quick-start"
+        "rootDir": "bit/quick-start",
+        "lanes": [
+            {
+                "remoteLane": "teambit.bit/redo-quickstart",
+                "version": "3a91c04844b991d6252a9fc00aca3599f2818d29"
+            }
+        ]
     },
-    "$schema-version": "14.9.0"
+    "$schema-version": "14.9.0",
+    "_bit_lane": {
+        "name": "redo-quickstart",
+        "scope": "teambit.bit"
+    }
 }
