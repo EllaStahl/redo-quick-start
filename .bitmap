@@ -9,6 +9,13 @@
  */
 
 {
+    "component-showcase": {
+        "scope": "teambit.community",
+        "version": "0.0.46",
+        "mainFile": "index.ts",
+        "rootDir": "community/component-showcase",
+        "onLanesOnly": true
+    },
     "content/quick-start": {
         "scope": "teambit.docs",
         "version": "1.95.36",
