@@ -9,16 +9,9 @@
  */
 
 {
-    "component-showcase": {
-        "scope": "teambit.community",
-        "version": "0.0.46",
-        "mainFile": "index.ts",
-        "rootDir": "community/component-showcase",
-        "onLanesOnly": true
-    },
     "content/quick-start": {
         "scope": "teambit.docs",
-        "version": "1.95.36",
+        "version": "1.95.38",
         "mainFile": "index.ts",
         "rootDir": "docs/content/quick-start",
         "lanes": [
@@ -37,7 +30,7 @@
     },
     "quick-start": {
         "scope": "teambit.bit",
-        "version": "0.0.36",
+        "version": "0.0.38",
         "mainFile": "index.ts",
         "rootDir": "bit/quick-start",
         "lanes": [
@@ -47,9 +40,5 @@
             }
         ]
     },
-    "$schema-version": "14.9.0",
-    "_bit_lane": {
-        "name": "redo-quickstart",
-        "scope": "teambit.bit"
-    }
+    "$schema-version": "14.9.0"
 }

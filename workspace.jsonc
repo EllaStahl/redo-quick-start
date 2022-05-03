@@ -39,8 +39,10 @@
     "packageManager": "teambit.dependencies/pnpm",
     "policy": {
       "dependencies": {
-        "@teambit/design.examples.sample-app": "0.0.8",
+        "@teambit/community.component-showcase": "0.0.49",
+        "@teambit/design.examples.sample-app": "0.0.9",
         "@teambit/eslint-config-bit-react": "~0.0.367",
+        "@types/loadable__component": "5.13.4",
         "@typescript-eslint/eslint-plugin": "4.29.3",
         "eslint-import-resolver-node": "0.3.6",
         "eslint-plugin-import": "2.22.1",
